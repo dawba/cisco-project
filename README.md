@@ -1,9 +1,9 @@
 # Sieci komputerowe - Cisco Packet Tracer
-Projekt wykonany przez:
-Dawid Bania
+Projekt wykonany przez zespół:
+*Dawid Bania
 Adam Egner
 Miłosz Wielgus
-Adam Suwaj
+Adam Suwaj*
 
 ## Cel projektu
 Punktowymi założeniami było wykonanie następujących:
@@ -141,6 +141,7 @@ Przy uwzględnieniu `Routera 11` daje nam to 511 hostów - więc wykorzystano ma
 ## Customer B
 ### Dla sieci `Customer B`
 - Wykorzystano protokół `DHCP` do konfigurowania hostów.
+- Użyto protokołu `NAT` wraz z `ACL` dla routingu w sieci.
 - Dobrano alokacje `VLAN'ów`, które przedstawiają się następująco:
 1. `VLAN zlotabrama` `192.168.10.0`
 2. `VLAN dzuniperek` `192.168.20.0`
