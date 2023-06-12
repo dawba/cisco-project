@@ -1,8 +1,8 @@
 # Sieci komputerowe - Cisco Packet Tracer
 Projekt wykonany przez zespół:
-*Dawid Bania
-Adam Egner
-Miłosz Wielgus
+*Dawid Bania,
+Adam Egner,
+Miłosz Wielgus,
 Adam Suwaj*
 
 ## Cel projektu
@@ -160,13 +160,13 @@ W obrębie sieci Customera B podłączone są również serwery `WWW` oraz `SMTP
 
 #### Switch 3
 
-#### Switch 4
-
-#### Server 0
-
-#### Server 2
-
-#### Router 10
-
-#### PC 7
- 
+```
+int range f0/22-23 //wybór zakresu portów do konfiguracji zaangażowanych w fizyczne połączenie z innym urządzeniem
+switchport mode trunk //włączenie operatywności w trybie trunk
+shutdown
+channel-group 1 mode desirable //stworzenie łącza w protokole PAgP
+no shutdown
+interface port-channel 1 //wybranie nowo utworzonego logicznego interfejsu do konfiguracji
+switchport mode trunk //przełączenie go w tryb trunk
+show etherchannel summary //weryfikacja statusu Po1
+ ```
